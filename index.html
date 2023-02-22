@@ -11,21 +11,34 @@
     
 </head>
 <body>
-    <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
-    <p>The ultimate game of chance</p>
+    <main>
+        <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
+        <h2>The ultimate game of chance</h2>
 
-    <section class="container">
-        <div class="button">
-            <button data-type="0" class="btn btn-lg btn-success" id="rock">Rock</button>
-            <button data-type="1" class="btn btn-lg btn-success" id="paper">Paper</button>
-            <button data-type="2" class="btn btn-lg btn-success" id="scissors">Scissors</button>
-            <button data-type="3" class="btn btn-lg btn-success" id="lizard">Lizard</button>
-            <button data-type="4" class="btn btn-lg btn-success" id="spock">Spock</button>
-            
-        </div>
-        <div class="choices"></div>
-        <div class="score"></div>
-    </section>
-<script src="assets/js/script.js"></script>  
+        <!--main game area -->
+        <section class="game">
+            <div id="human-score">
+                <h3>Human score:</h3>
+            </div> 
+
+            <div id="machine-score">
+                <h3>Machine score: <span></span></h3>
+            </div>
+
+            <div id="selection">Make your selection</div>
+
+            <div id="player-choices">
+                <button class="btn" id="rock" data-type="0"><img src="" alt=""></button>
+                <button class="btn" id="paper" data-type="1"><img src="" alt=""></button>
+                <button class="btn" id="scissors" data-type="2"><img src="" alt=""></button>
+                <button class="btn" id="lizard" data-type="3"><img src="" alt=""></button>
+                <button class="btn" id="spock" data-type="4" ><img src="" alt=""></button>
+            </div>
+
+            <div id="results"></div>
+
+        </section>
+
+    <script src="assets/js/script.js"></script>  
 </body>
 </html>
