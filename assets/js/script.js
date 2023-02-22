@@ -6,14 +6,47 @@ const playerOptions = ["rock", "paper", "scissors", "lizard", "spock"]
 for (let button of buttons) {
     button.addEventListener("click", function() {
         let humanChoice = this.getAttribute("data-type");
-        startGame(humanChoice);
+        let machineChoice = Math.floor(Math.random() * 5);
     })
 }
 
-function startGame(humanChoice) {
-    let machineChoice = Math.floor(Math.random() * 5);
 
-    let result = checkResult(playerOptions[machineChoice], [humanChoice]);
+let rules = {
+    Rock: {
+        Rock: 'draw',
+        Scissors: 'lose',
+        Paper: 'win',
+        Spock: 'win',
+        Lizard: 'lose'
+    },
+    Paper: {
+        Paper: 'draw',
+        Rock: 'lose',
+        Scissors: 'win',
+        Lizard: 'win',
+        Spock: 'lose'
+    },
+    Scissors: {
+        Scissors: 'draw',
+        Paper: 'lose',
+        Rock: 'win',
+        Lizard: 'lose',
+        Spock: 'win'
+    },
+    Lizard: {
+        Scissors: 'win',
+        Paper: 'lose',
+        Rock: 'win',
+        Lizard: 'draw',
+        Spock: 'lose'
+    },
+    Spock: {
+        Scissors: 'lose',
+        Paper: 'win',
+        Rock: 'lose',
+        Lizard: 'win',
+        Spock: 'draw'
+    }
 }
 
 function winner() {
