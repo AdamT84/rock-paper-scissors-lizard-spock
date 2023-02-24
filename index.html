@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/05890afc59.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -11,32 +13,30 @@
     
 </head>
 <body>
-    <main>
-        <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
-        <h2>The ultimate game of chance</h2>
+    <h1 class="head">
+        <img src="assets/images/logo.png" alt="logo">Rock, Paper, Scissors, Lizard, Spock
+    </h1>
 
-        <!--main game area -->
-        <section>
-            <div>
-                <h3>Your Choice: <span id="your-choice"></span></h3>
-            </div> 
+    <div class="main-game">
+        <div class="player-options">
+            <button class="btn" id="rock" data-index="0"><i class="fa-solid fa-hand-back-fist"></i> Rock</button>
+            <button class="btn" id="paper" data-index="1"><i class="fa-solid fa-hand"></i> Paper</button>
+            <button class="btn" id="scissors" data-index="2"><i class="fa-solid fa-hand-scissors"></i> Scissors</button>
+            <button class="btn" id="lizard" data-index="3"><i class="fa-solid fa-hand-lizard"></i> Lizard</button>
+            <button class="btn" id="spock" data-index="4"><i class="fa-solid fa-hand-spock"></i> Spock</button>
+        </div>
+    </div>
 
-            <div>
-                <h3>Robot Choice: <span id="robot-choice"></span></span></h3>
-            </div>
+    <div class="results">Result: <span id="result"></span> </div>
 
-            <div id="player-options">
-                <button class="btn" id="rock"><img src="" alt=""></button>
-                <button class="btn" id="paper"><img src="" alt=""></button>
-                <button class="btn" id="scissors"><img src="" alt=""></button>
-                <button class="btn" id="lizard"><img src="" alt=""></button>
-                <button class="btn" id="spock"><img src="" alt=""></button>
-            </div>
+    <div class="scoring">
+        <p class="scores">Player Score: <span id="player-score">0</span></p>
+        <p class="scores">Computer Score: <span id="computer-score">0</span></p>
+    </div>
 
-            <div id="results"></div>
 
-        </section>
 
-    <script src="assets/js/script.js"></script>  
+    </section>
+    <script src="assets/js/index.js"></script>  
 </body>
 </html>
