@@ -19,6 +19,7 @@
 
     <div class="main-game">
         <div class="player-options">
+            <p>Make your choice!</p>
             <button class="btn" id="rock" data-index="0"><i class="fa-solid fa-hand-back-fist"></i> Rock</button>
             <button class="btn" id="paper" data-index="1"><i class="fa-solid fa-hand"></i> Paper</button>
             <button class="btn" id="scissors" data-index="2"><i class="fa-solid fa-hand-scissors"></i> Scissors</button>
@@ -27,16 +28,18 @@
         </div>
     </div>
 
-    <div class="results">Result: <span id="result"></span> </div>
+    <div id="alerts"></div>
 
-    <div class="scoring">
-        <p class="scores">Player Score: <span id="player-score">0</span></p>
-        <p class="scores">Computer Score: <span id="computer-score">0</span></p>
+    <div class="player">
+        <h3>Player 1 Score: <span id="player-score">0</span></p></h3>
     </div>
 
+    <div class="computer">
+        <h3>Computer score: <span id="computer-score">0</span></p></h3>
+    </div>
+    
+    <div class="results">Result: <span id="result"></span> </div>
 
-
-    </section>
     <script src="assets/js/index.js"></script>  
 </body>
 </html>
