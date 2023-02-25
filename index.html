@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Fontawesome and Goole fonts scripts-->
+    <!-- Fontawesome and Goole fonts-->
     <script src="https://kit.fontawesome.com/05890afc59.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Montserrat:wght@300;500;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -15,22 +16,24 @@
 </head>
 <body>
     <h1 class="head">
-        <img src="assets/images/logo.png" alt="logo">Rock, Paper, Scissors, Lizard, Spock
+        Rock, Paper, Scissors, Lizard, Spock
     </h1>
+
+    <h2>The ultimate game of chance</h2>
     <!-- Section containing player option buttons-->
-    <section>
+    <section id="selections" >
+        <h2>Make your choice</h2>
         <div id="player-options">
-            <h2>Make your choice</h2>
-            <button id="Rock"><i class="fa-regular fa-hand-back-fist"></i> Rock</button>
-            <button id="Paper"><i class="fa-regular fa-hand"></i> Paper</button>
-            <button id="Scissors"><i class="fa-regular fa-hand-scissors"></i> Scissors</button>
-            <button id="Lizard"><i class="fa-regular fa-hand-lizard"></i> Lizard</button>
-            <button id="Spock"><i class="fa-regular fa-hand-spock"></i> Spock</button>
+            <button id="Rock">Rock</button>
+            <button id="Paper">Paper</button>
+            <button id="Scissors">Scissors</button>
+            <button id="Lizard">Lizard</button>
+            <button id="Spock">Spock</button>
         </div>
     </section>
     
     <!-- Section containin the computer and player selection-->
-    <section>
+    <section id="players">
         <div id="computer">
             <h2>Computer Chose: <span id="comp-choice"></span></h2>
            </div>
