@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Fontawesome and Goole fonts scripts-->
     <script src="https://kit.fontawesome.com/05890afc59.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,30 +17,37 @@
     <h1 class="head">
         <img src="assets/images/logo.png" alt="logo">Rock, Paper, Scissors, Lizard, Spock
     </h1>
-
-    <div class="main-game">
-        <div class="player-options">
-            <p>Make your choice!</p>
-            <button class="btn" id="rock" data-index="0"><i class="fa-solid fa-hand-back-fist"></i> Rock</button>
-            <button class="btn" id="paper" data-index="1"><i class="fa-solid fa-hand"></i> Paper</button>
-            <button class="btn" id="scissors" data-index="2"><i class="fa-solid fa-hand-scissors"></i> Scissors</button>
-            <button class="btn" id="lizard" data-index="3"><i class="fa-solid fa-hand-lizard"></i> Lizard</button>
-            <button class="btn" id="spock" data-index="4"><i class="fa-solid fa-hand-spock"></i> Spock</button>
+    <!-- Section containing player option buttons-->
+    <section>
+        <div id="player-options">
+            <h2>Make your choice</h2>
+            <button id="Rock"><i class="fa-regular fa-hand-back-fist"></i> Rock</button>
+            <button id="Paper"><i class="fa-regular fa-hand"></i> Paper</button>
+            <button id="Scissors"><i class="fa-regular fa-hand-scissors"></i> Scissors</button>
+            <button id="Lizard"><i class="fa-regular fa-hand-lizard"></i> Lizard</button>
+            <button id="Spock"><i class="fa-regular fa-hand-spock"></i> Spock</button>
         </div>
-    </div>
-
-    <div id="alerts"></div>
-
-    <div class="player">
-        <h3>Player 1 Score: <span id="player-score">0</span></p></h3>
-    </div>
-
-    <div class="computer">
-        <h3>Computer score: <span id="computer-score">0</span></p></h3>
-    </div>
+    </section>
     
-    <div class="results">Result: <span id="result"></span> </div>
+    <!-- Section containin the computer and player selection-->
+    <section>
+        <div id="computer">
+            <h2>Computer Chose: <span id="comp-choice"></span></h2>
+           </div>
+        
+           <div id="player">
+            <h2>You Chose: <span id="player-choice"></span></h2>
+           </div>
+    </section>
 
-    <script src="assets/js/index.js"></script>  
+    <!-- Section containing the result output-->
+    <section>
+        <div id="outcome">
+            <h2>Result: <span id="result"></span></h2>
+           </div>
+    </section>
+   
+    <!-- Javascript file-->
+   <script src="assets/js/index.js"></script>  
 </body>
 </html>
