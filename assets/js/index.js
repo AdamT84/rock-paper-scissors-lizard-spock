@@ -6,6 +6,7 @@ const possibleChoices = document.querySelectorAll("img");
 const computerScore = document.getElementById("comp-score");
 const playerScore = document.getElementById("player-score");
 const tiedGame = document.getElementById("tied-game");
+const button = document.getElementById("reset");
 
 // Variables for player selection, computer section and result //
 let playerChoice;
@@ -23,11 +24,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
   playerChoiceDisplay.innerHTML = playerChoice;
   generateCompChoice();
   getResult();
-  getScore();
-  endGame();
-  restartGame();
-  restartScores();
-}));
+  }));
   
 // Function to generate the computers choice using random number //
 function generateCompChoice() {
@@ -94,8 +91,10 @@ function getResult() {
     result = lost;
   }
 
-  // Increments the score depending on outcome //
+  // Writes result to HTML //
   resultDisplay.innerHTML = result;
+
+    // Increments the score depending on outcome //
   if (result === won) {
     humanScore++;
   } else if (result === tie) {
@@ -110,33 +109,20 @@ function getResult() {
   tiedGame.innerHTML = tieScore;
 
   if (humanScore === 10) {
-    resultDisplay.innerHTML = "GAME OVER!! Congratualations you've won the game, press the reset button to start again";
+    resultDisplay.innerHTML = "GAME OVER!! Congratulations you've won the game, press the reset button to start again";
   } else if (botScore === 10) {
-    resultDisplay.innerHTML = "GAME OVER!! Bad luck, you didn't win, press the reset button to try again";
+    resultDisplay.innerHTML = "GAME OVER!! Bad luck, you didn't win this time, press the reset button to try again";
   }
-
-  if (humanScore === 10 || botScore === 10){
-    endGame();
-  }
-
-}
-function endGame() {
-  possibleChoices.disabled = true;
 }
 
 function restartGame() {
-  restartScores();
-  possibleChoices.disabled = false;
+humanScore = 0;
+botScore = 0;
+tieScore = 0;
+playerScore.innerHTML = humanScore;
+computerScore.innerHTML = botScore;
+tiedGame.innerHTML = tieScore;
+resultDisplay.innerHTML = "";
+playerChoiceDisplay.innerHTML = "";
+compChoiceDisplay.innerHTML = "";
 }
-
-function restartScores() {
-  humanScore = 0;
-  botScore = 0;
-  tieScore = 0;
-  playerScore.innerHTML = humanScore;
-  computerScore.innerHTML = botScore;
-  tiedGame.innerHTML = tieScore;
-  resultDisplay.innerHTML = "";
-}
-
-

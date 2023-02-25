@@ -32,6 +32,10 @@ h1, h2 {
     flex-basis: 22.5%;
 }
 
+.selection:hover {
+    margin-top: -10px;
+}
+
 #players {
     display: flex;
     flex-direction: row;
@@ -55,6 +59,10 @@ h1, h2 {
     border-radius: 50%;
     background-color: #205072;
     border: 2px #205072;
+}
+
+#reset:hover {
+    background-color: red;
 }
 
 
