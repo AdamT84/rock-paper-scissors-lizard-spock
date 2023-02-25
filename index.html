@@ -19,20 +19,20 @@
         Rock, Paper, Scissors, Lizard, Spock
     </h1>
 
-    <h2>The ultimate game of chance</h2>
+    <h2>The Ultimate Game of Chance</h2>
     <!-- Section containing player option buttons-->
-    <section id="selections" >
-        <h2>Make your choice</h2>
+    <section>
+        <h2>Click on an image to make your choice</h2>
         <div id="player-options">
-            <button id="Rock">Rock</button>
-            <button id="Paper">Paper</button>
-            <button id="Scissors">Scissors</button>
-            <button id="Lizard">Lizard</button>
-            <button id="Spock">Spock</button>
+            <span class="selection"><img id="Rock" src="assets/images/rock.png" alt="rock"></span>
+            <span class="selection"><img id="Paper" src="assets/images/paper.png" alt="paper"></span>
+            <span class="selection"><img id="Scissors" src="assets/images/scissors.png" alt="scissors"></span>
+            <span class="selection"><img id="Lizard" src="assets/images/lizard.png" alt="lizard"></span>
+            <span class="selection"><img id="Spock" src="assets/images/spock.png" alt="spock"></span>
         </div>
     </section>
     
-    <!-- Section containin the computer and player selection-->
+    <!-- Section containing the computer and player selection-->
     <section id="players">
         <div id="computer">
             <h2>Computer Chose: <span id="comp-choice"></span></h2>
@@ -49,6 +49,22 @@
             <h2>Result: <span id="result"></span></h2>
            </div>
     </section>
+
+    <section id="scores">
+        <div>
+            <h2>Computer score: <span id="comp-score"></span></h2>
+        </div>
+
+        <div>
+            <h2>Your score: <span id="player-score"></span></h2>
+        </div>
+
+        <div>
+            <h2>Ties: <span id="tied-game"></span></h2>
+        </div>
+    </section>
+
+    <button id="reset" onclick="restartGame()">Reset Game</i></button>
    
     <!-- Javascript file-->
    <script src="assets/js/index.js"></script>  
