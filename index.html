@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Fontawesome and Goole fonts-->
-    <script src="https://kit.fontawesome.com/05890afc59.js" crossorigin="anonymous"></script>
+    <!-- goole fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Montserrat:wght@300;500;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     
+    <!-- css file-->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Rock, Paper, Scissors, Lizard, Spock!</title>
@@ -18,11 +18,9 @@
     <h1 class="head">
         Rock, Paper, Scissors, Lizard, Spock
     </h1>
-
-    <h2>The Ultimate Game of Chance</h2>
-    <!-- Section containing player option buttons-->
+    <!-- section containing player option as clickable image-->
     <section>
-        <h2>Click on an image to make your choice</h2>
+        <h2>Click on an image to make your choice and start the game</h2>
         <div id="player-options">
             <span class="selection"><img id="Rock" src="assets/images/rock.png" alt="rock"></span>
             <span class="selection"><img id="Paper" src="assets/images/paper.png" alt="paper"></span>
@@ -32,24 +30,25 @@
         </div>
     </section>
     
-    <!-- Section containing the computer and player selection-->
+    <!-- section containing the computer and player selection-->
     <section id="players">
         <div id="computer">
-            <h2>Computer Chose: <span id="comp-choice"></span></h2>
+            <h2>Computer chose: <span id="comp-choice"></span></h2>
            </div>
         
            <div id="player">
-            <h2>You Chose: <span id="player-choice"></span></h2>
+            <h2>You chose: <span id="player-choice"></span></h2>
            </div>
     </section>
 
-    <!-- Section containing the result output-->
+    <!-- displays result -->
     <section>
         <div id="outcome">
             <h2><span id="result"></span></h2>
            </div>
     </section>
 
+    <!-- displays computer, player scores and  number of ties-->
     <section id="scores">
         <div>
             <h2>Computer score: <span id="comp-score"></span></h2>
@@ -64,9 +63,25 @@
         </div>
     </section>
 
-    <button id="reset" onclick="restartGame()">Reset Game</button>
-   
-    <!-- Javascript file-->
+    <div class="btn">
+        <!-- Calls restartGame function when player clicks button -->
+        <button id="reset" onclick="restartGame()">Reset Game</button>
+        <!--  opens rules modal-->
+        <button id="rule-btn">Rules</button>
+    </div>
+
+    <!-- modal -->
+    <div id="rulesModal" class="modal"></div>
+
+    <!-- modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p><img src="assets/images/rules.png" alt="Game-rules"></p>
+    </div>
+
+   <!-- Javascript and fontawesome scripts-->
    <script src="assets/js/index.js"></script>  
+   <script src="https://kit.fontawesome.com/05890afc59.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
