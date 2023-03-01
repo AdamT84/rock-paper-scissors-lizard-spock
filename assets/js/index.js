@@ -22,6 +22,27 @@ let won = "You win!";
 let lost = "You lose!";
 let tie = "It's a tie!";
 
+// Function to show game screen and hide start screen
+function gameScreen() {
+  document.getElementById("start-screen").style.display = "none";
+  document.getElementById("game-screen").style.display = "block";
+}
+
+// Modal variables
+let modal = document.getElementById("rules-modal");
+let btn = document.getElementById("rule-btn");
+let span = document.getElementsByClassName("close")[0];
+
+// Open modal on rules button click
+function rules() {
+  modal.style.display = "block";
+}
+
+// Close model when X is clicked
+function close () {
+  modal.style.display = "none";
+}
+
 // Add event listener to selection images
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   playerChoice = e.target.id;
@@ -144,24 +165,3 @@ function restartGame() {
   compChoiceDisplay.innerHTML = "";
 }
 
-// Modal variables
-let modal = document.getElementById("rulesModal");
-let btn = document.getElementById("rule-btn");
-let span = document.getElementsByClassName("close")[0];
-
-// Open modal on rules button click
-btn.onclick = function () {
-  modal.style.display = "block";
-}
-
-// Close model when X is clicked
-span.onclick = function () {
-  modal.style.display = "none";
-}
-
-// Close modal if user clicks outside of modal box
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
