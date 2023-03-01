@@ -31,7 +31,7 @@ function gameScreen() {
 // Modal variables
 let modal = document.getElementById("rules-modal");
 let btn = document.getElementById("rule-btn");
-let span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close-modal")[0];
 
 // Open modal on rules button click
 function rules() {
@@ -39,7 +39,7 @@ function rules() {
 }
 
 // Close model when X is clicked
-function close () {
+function closeModal () {
   modal.style.display = "none";
 }
 

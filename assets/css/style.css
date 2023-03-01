@@ -39,7 +39,7 @@ body, input {
  
   /*  Modal close */
 .close {
-    color: #aaa;
+    color: #d60707;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -128,7 +128,7 @@ h1, h2 {
 }
 
 /* change background color of play button on mouse over */
-#rule-btn:hover {
+#start-btn:hover {
     background-color: rgb(101, 10, 10);
 }
 
