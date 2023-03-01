@@ -142,10 +142,7 @@ function updateScore() {
 }
 
 function gameOver(player) {
-  possibleChoices.forEach(possibleChoice => possibleChoice.removeEventListener('click', (e) => {
-  }));
-  
-  if (player == "human") {
+   if (player == "human") {
     resultDisplay.innerHTML = "GAME OVER!! Congratulations you've won the game, press the reset button to start again";
   } else {
     resultDisplay.innerHTML = "GAME OVER!! Bad luck, you didn't win this time, press the reset button to try again";
