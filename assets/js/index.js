@@ -2,6 +2,7 @@
 const compChoiceDisplay = document.getElementById("comp-choice");
 const playerChoiceDisplay = document.getElementById("player-choice");
 const resultDisplay = document.getElementById("result");
+const endGameDisplay = document.getElementById("end-game");
 const possibleChoices = document.querySelectorAll("img");
 const computerScore = document.getElementById("comp-score");
 const playerScore = document.getElementById("player-score");
@@ -142,15 +143,20 @@ function updateScore() {
 }
 
 function gameOver(player) {
-   if (player == "human") {
-    resultDisplay.innerHTML = "GAME OVER!! Congratulations you've won the game, press the reset button to start again";
+  document.getElementById("game-screen").style.display = "none";
+  document.getElementById("game-over").style.display = "block";
+
+  if (player == "human") {
+    endGameDisplay.innerHTML = "Congratulations! You won";
   } else {
-    resultDisplay.innerHTML = "GAME OVER!! Bad luck, you didn't win this time, press the reset button to try again";
+    endGameDisplay.innerHTML = "Bad luck!, you didn't win this time";
   }
 }
 
 // Function to allow user to reset scores to 0 and restart game
 function restartGame() {
+  document.getElementById("game-screen").style.display = "block";
+  document.getElementById("game-over").style.display = "none";
   humanScore = 0;
   botScore = 0;
   tieScore = 0;

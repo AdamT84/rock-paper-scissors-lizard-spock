@@ -17,74 +17,89 @@
 <body>
     <div id="start-screen">
         <h1>Welcome to Rock, Paper, Scissors, Lizard, Spock</h1>
-        <img src="assets/images/spock-welcome.png" id=spock alt="spock">
-
+        <h2>The Ultimate Game of Chance</h2>
+        <div class="fade-in-image">
+            <img src="assets/images/spock-welcome.png" id=spock alt="spock">
+        </div>
+        
         <div id="welcome">
             <button onclick="gameScreen()" id="start-btn">Play</button>
             <button onclick="rules()" id="rule-btn">Rules</button>
         </div>
 
         <div id="rules-modal" class="modal">
+            
+        <div class="modal-content">
             <button onclick="closeModal()">
                 <span class="close-modal">&times;</span>
             </button>
-            <p><img src="assets/images/rules.png" id="rules-diagram" alt="game rules"></p>
+            <img src="assets/images/rules.png" id="rules-diagram" alt="game rules">
+        </div>    
+            
         </div>
     </div>
 
     <div id="game-screen">
         <h1 class="head">Rock, Paper, Scissors, Lizard, Spock</h1>
         <!-- section containing player option as clickable image-->
-    <section>
-        <h2>Click on an image to make your choice and start the game</h2>
-        <div id="player-options">
-            <span class="selection"><img id="Rock" src="assets/images/rock.png" alt="rock"></span>
-            <span class="selection"><img id="Paper" src="assets/images/paper.png" alt="paper"></span>
-            <span class="selection"><img id="Scissors" src="assets/images/scissors.png" alt="scissors"></span>
-            <span class="selection"><img id="Lizard" src="assets/images/lizard.png" alt="lizard"></span>
-            <span class="selection"><img id="Spock" src="assets/images/spock.png" alt="spock"></span>
-        </div>
-    </section>
+        <section>
+            <h2>Click on an image to make your choice and start the game</h2>
+            <div id="player-options">
+                <span class="selection"><img id="Rock" src="assets/images/rock.png" alt="rock"></span>
+                <span class="selection"><img id="Paper" src="assets/images/paper.png" alt="paper"></span>
+                <span class="selection"><img id="Scissors" src="assets/images/scissors.png" alt="scissors"></span>
+                <span class="selection"><img id="Lizard" src="assets/images/lizard.png" alt="lizard"></span>
+                <span class="selection"><img id="Spock" src="assets/images/spock.png" alt="spock"></span>
+            </div>
+        </section>
     
-    <!-- section containing the computer and player selection-->
-    <section id="players">
-        <div id="computer">
-            <h2>Computer chose: <span id="comp-choice"></span></h2>
-           </div>
+        <!-- section containing the computer and player selection-->
+        <section id="players">
+            <div id="computer">
+                <h2>Computer chose: <span id="comp-choice"></span></h2>
+            </div>
         
-           <div id="player">
-            <h2>You chose: <span id="player-choice"></span></h2>
-           </div>
-    </section>
+            <div id="player">
+                <h2>You chose: <span id="player-choice"></span></h2>
+            </div>
+        </section>
 
-    <!-- displays result -->
-    <section>
-        <div id="outcome">
-            <h2><span id="result"></span></h2>
-           </div>
-    </section>
+        <!-- displays result -->
+        <section>
+            <div id="outcome">
+                <h2><span id="result"></span></h2>
+            </div>
+        </section>
 
-    <!-- displays computer, player scores and  number of ties-->
-    <section id="scores">
-        <div>
-            <h2>Computer score: <span id="comp-score"></span></h2>
-        </div>
+        <!-- displays computer, player scores and  number of ties-->
+        <section id="scores">
+            <div class="scored">
+                <h2>Computer score: <span id="comp-score"></span></h2>
+            </div>
 
-        <div>
-            <h2>Your score: <span id="player-score"></span></h2>
-        </div>
+            <div class="scored">
+                <h2>Your score: <span id="player-score"></span></h2>
+            </div>
 
-        <div>
-            <h2>Ties: <span id="tied-game"></span></h2>
-        </div>
-    </section>
-
-    <div class="btn">
-        <!-- Calls restartGame function when player clicks button -->
-        <button id="reset" onclick="restartGame()">Reset Game</button>
+            <div class="scored">
+                <h2>Ties: <span id="tied-game"></span></h2>
+            </div>
+        </section>
     </div>
-   </div>
-   <!-- Javascript and fontawesome scripts-->
+
+    <div id="game-over">
+        <div>
+            <img src="assets/images/game-over.png" id="end" alt="game-over">
+            <h2><span id="end-game"></span></h2>
+            <h2>Press the reset button to play again</h2>
+        </div>
+        <div class="btn">
+            <!-- Calls restartGame function when player clicks button -->
+            <button id="reset" onclick="restartGame()">Reset Game</button>
+        </div>
+    </div>
+    
+   <!--Javascript and fontawesome scripts-->
    <script src="assets/js/index.js"></script>  
    <script src="https://kit.fontawesome.com/05890afc59.js" crossorigin="anonymous"></script>
 
