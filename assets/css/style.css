@@ -184,6 +184,7 @@ h1, h2 {
     background-color: rgb(101, 10, 10);
 }
 
+/* ensure content is centered and responsive */
 #end-game {
     display: flex;
     flex-direction: column;
@@ -192,13 +193,14 @@ h1, h2 {
     align-items: center;
 }
 
+/* Set size for game over image */
 #end {
     padding-top: 25px;
     width: 400px;
     height: 400px;
-
 }
 
+/* Media queries to ensure all elements are responsive on all screen sizes */
 @media screen and (max-width: 1022px) {
     .modal {
         display: none;

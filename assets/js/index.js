@@ -13,6 +13,7 @@ const button = document.getElementById("reset");
 let playerChoice;
 let compChoice;
 let result;
+let message;
 
 // Variables to hold scores
 let humanScore = "0";
@@ -82,30 +83,39 @@ function getResult() {
 
   } else if (compChoice === "Rock" && playerChoice === "Paper") {
     result = won;
+    message = "You Win! Paper Wraps Rock";
 
   } else if (compChoice === "Rock" && playerChoice === "Spock") {
     result = won;
+    message = "You Win! Spock Vaporizes Rock";
 
   } else if (compChoice === "Paper" && playerChoice === "Scissors") {
     result = won;
+    message = "You Win! Scissors Cuts Paper";
 
   } else if (compChoice === "Paper" && playerChoice === "Lizard") {
     result = won;
+    message = "You Win! Lizard Eats Paper";
 
   } else if (compChoice === "Scissors" && playerChoice === "Rock") {
     result = won;
+    message = "You Win! Rock Smashed Scissors";
 
   } else if (compChoice === "Scissors" && playerChoice === "Spock") {
     result = won;
+    message = "You Win! Spock Smashes Scissors";
 
   } else if (compChoice === "Lizard" && playerChoice === "Rock") {
     result = won;
+    message = "You Win! Rock Crushes Lizard";
 
   } else if (compChoice === "Lizard" && playerChoice === "Scissors") {
     result = won;
+    message = "You Win! Scissors Decapitates Lizard";
 
   } else if (compChoice === "Spock" && playerChoice === "Paper") {
     result = won;
+    message = "You Win! Paper Disproves Spock"
 
   } else if (compChoice === "Spock" && playerChoice === "Lizard") {
     result = won;
@@ -141,11 +151,12 @@ function updateScore() {
     gameOver("bot");
   }
 }
-
+// Game over function hides game screen and shows game over screen
 function gameOver(player) {
   document.getElementById("game-screen").style.display = "none";
   document.getElementById("game-over").style.display = "block";
 
+ // Writes won or lost message to html element
   if (player == "human") {
     endGameDisplay.innerHTML = "Congratulations! You won";
   } else {
