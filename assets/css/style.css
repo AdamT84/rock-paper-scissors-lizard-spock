@@ -31,41 +31,17 @@ body, input {
     height: 400px;
 }
 
-/* Duration of fade in for start page annimation.
-Advice on CSS animation from a blog by Jamie Juviler on Hubspot.com */
+/* Duration of fade in for start page annimation */
+/* Advice on CSS animation from w3schools.com */
 .fade-in-image {
     animation: fadeIn 6s;
-    -webkit-animation: fadeIn 6s;
-    -moz-animation: fadeIn 6s;
-    -o-animation: fadeIn 6s;
-    -ms-animation: fadeIn 6s;
 }
 
 /* Animation key frames */
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+}
 
 /* Modal background */
 .modal {
@@ -157,6 +133,11 @@ h1, h2 {
     align-items: center;
 }
 
+#result {
+    font-size: 18pt;
+    font-weight: 700;
+}
+
  /* reset and rules button styles */
 #reset, #rule-btn, #start-btn {
     font: inherit;
@@ -192,11 +173,14 @@ h1, h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-size: 18pt;
+    font-weight: 700;
 }
 
 /* Set size for game over image */
 #end {
     padding-top: 25px;
+    padding-bottom: 20px;
     width: 400px;
     height: 400px;
 }
@@ -234,7 +218,7 @@ h1, h2 {
     }
 
     h1, h2 {
-        margin: 5px, 5px, 10px, 5px;
+        margin: 5px 5px 10px 5px;
         font-family: Orbitron, sans-serif;
         font-weight: 700;
     }
@@ -259,6 +243,8 @@ h1, h2 {
     }
 }    
 
+
+/* Code for fixed footer from w3schools */
 #footer {
     position: fixed;
     left: 0;
@@ -268,6 +254,7 @@ h1, h2 {
   }
 
 #social-media {
-    color: #150605;
-    font-size: 150%;
+    color: black;
+    font-size: 200%;
+   
 }
