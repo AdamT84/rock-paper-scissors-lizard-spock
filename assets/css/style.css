@@ -258,3 +258,16 @@ h1, h2 {
         height: 300px;
     }
 }    
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+#social-media {
+    color: #150605;
+    font-size: 150%;
+}
