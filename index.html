@@ -15,18 +15,19 @@
     
 </head>
 <body>
+    <!-- Start screen area-->
     <div id="start-screen">
         <h1>Welcome to Rock, Paper, Scissors, Lizard, Spock</h1>
         <h2>The Ultimate Game of Chance</h2>
         <div class="fade-in-image">
             <img src="assets/images/spock-welcome.png" id=spock alt="spock">
         </div>
-        
+        <!-- Rules and start buttons-->
         <div id="welcome">
             <button onclick="gameScreen()" id="start-btn">Play</button>
             <button onclick="rules()" id="rule-btn">Rules</button>
         </div>
-
+        <!--Modal for rules pop up - Advice on modal creation from w3schools.com-->
         <div id="rules-modal" class="modal">
             
         <div class="modal-content">
@@ -38,7 +39,7 @@
             
         </div>
     </div>
-
+    <!-- Game screen area-->
     <div id="game-screen">
         <h1 class="head">Rock, Paper, Scissors, Lizard, Spock</h1>
         <!-- section containing player option as clickable image-->
@@ -86,7 +87,8 @@
             </div>
         </section>
     </div>
-
+    
+    <!-- Game over area-->
     <div id="game-over">
         <div>
             <img src="assets/images/game-over.png" id="end" alt="game-over">

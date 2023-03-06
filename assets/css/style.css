@@ -31,7 +31,8 @@ body, input {
     height: 400px;
 }
 
-/* Duration of fade in for start page annimation */
+/* Duration of fade in for start page annimation.
+Advice on CSS animation from a blog by Jamie Juviler on Hubspot.com */
 .fade-in-image {
     animation: fadeIn 6s;
     -webkit-animation: fadeIn 6s;
