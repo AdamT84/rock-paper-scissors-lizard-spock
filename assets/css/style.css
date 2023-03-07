@@ -138,6 +138,10 @@ h1, h2 {
     font-weight: 700;
 }
 
+#outcome {
+    padding: 20px;
+}
+
  /* reset and rules button styles */
 #reset, #rule-btn, #start-btn {
     font: inherit;

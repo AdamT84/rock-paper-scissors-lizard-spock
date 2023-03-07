@@ -158,7 +158,7 @@ function gameOver(player) {
 
  // Writes won or lost message to html element
   if (player == "human") {
-    endGameDisplay.innerHTML = "Congratulations! You won";
+    endGameDisplay.innerHTML = "Congratulations, You win!!";
   } else {
     endGameDisplay.innerHTML = "Bad luck!, you didn't win this time";
   }
