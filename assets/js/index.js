@@ -1,3 +1,5 @@
+// jshint esversion: 6
+
 // List all DOM variables 
 const compChoiceDisplay = document.getElementById("comp-choice");
 const playerChoiceDisplay = document.getElementById("player-choice");
@@ -7,7 +9,6 @@ const possibleChoices = document.querySelectorAll("img");
 const computerScore = document.getElementById("comp-score");
 const playerScore = document.getElementById("player-score");
 const tiedGame = document.getElementById("tied-game");
-const button = document.getElementById("reset");
 
 // Variables for player selection, computer section and result
 let playerChoice;
@@ -115,7 +116,7 @@ function getResult() {
 
   } else if (compChoice === "Spock" && playerChoice === "Paper") {
     result = won;
-    message = "You Win! Paper Disproves Spock"
+    message = "You Win! Paper Disproves Spock";
 
   } else if (compChoice === "Spock" && playerChoice === "Lizard") {
     result = won;

@@ -4,93 +4,184 @@ Rock, Paper, Scissors, Lizard, Spock is a game invented by Sam Kass with Karen B
 
 The pupose of this site is to allow players to test their luck against the computer, or perhaps to help friends and family make decisions based on the random outcome of the game or just as a source of fun. The computer in this game makes a genuinely random selection, thus giving a fairer result than playing with another person as there are no patterns or preferred choices used by the computer. The users of this game will be able to find out the rules of the game with a simple diagram and will be able to track their score. The game is designed to be played on any device with Javascript enabled and by both adults and children. 
 
-## Features
+## User Experience Design
 
-### Existing Features
+### User stories
 
--  Navigation Bar
+#### First Time Player Goals
 
-    - The Navigation bar is fully responsive and aligned centrally at the top of all pages and includes links to Home, Training and Contact pages. This will ensure the navigation experience is the same across the entire site.
-    - The value for the user is a simple navigation method that allows access to any page from any page. 
+- As a first time player, I want to be able to easily understand the game purpose and find instructions about it.
+- As a first time player, I want to be able to take my time and not be rushed.
+- As a first time player, I want to know easily if I won or lost the round. 
+- As a first time player, I want to view the website and the content clearly on my mobile devices.
+
+#### Frequent Player Goals
+
+- As a frequent player I want to feel the game is random and I can both win and lose.
+- As a frequent player I want to ensure I can see my score and the computers score.
+- As a frequent player I want to start the game quickly without having to look at instructions or rules.
+
+## Design
+
+### Colour Scheme
+
+The main colours used throughout the site are blue and green for back grounds with black text. The reason the developer chose these colours was to give the game a sci-fi link. Spock, who fans of Star Trek will know wore a blue shirt and green as this is colour everone thinks of with aliens. They have been merged by use of a liner-gradient in css to make an appealing background. The background offers excellent constrast with the black text and ensure the foreground is prominent. 
+
+### Typography
+
+The font chosen for the site is Orbitron and this has sci-fi feel and fits with the theme of the site extremly well. The fallback font is Sans Serif in case of import failure.
+
+### Media
+
+The images used are catching and a good visual representation of the sites theme. 
+
+All images have been given alt text. 
+
+# Features
+
+The site is one page split into three areas: 
+
+- A start screen
+    - play and rules button and is the entry point into the game.
+    - Pressing the rules button will open a modal box with a diagram explaining the rules.
+    - Pressing the play button will take the user to the game screen.
+
+- A game screen
+    - Player selection buttons to start the game and make their choice of rock, paper, scissors, lizard or spock.
+    - Computer selected and Player selected fields. 
+    - The result of who won or if it was tie.
+    - The score for both computer and player and number of ties. 
+
+-  a game over screen. 
+    - Notifies the user if they have won or lost the game.
+    - Reset button to clear the scores and restart game.
 
 
+## Existing Features
 
-- Landing page image
+### Start Page
 
-    - The landing page image features a photo with the Young PT logo and moto overlayed showing the user that this site relates to training.
-    - This will introduce the user to the Young PT brand and colour schemes used through the site. 
+#### Title
+
+![Start Screen Title](/screenshots/start-screen-title.png)
+
+#### Start Screen Image
+
+- Start screen has an animated cartoon image of spock with a fade in effect, making it look like he is being beamed onto the page.
+- There are also two buttons, play and rules. Play will take user to the game screen and rules will display the rules diagram.
+
+![Start Screen](/screenshots/start-screen.png)
+
+#### Rules Modal
+- When a player clicks the rules button they are present with a clear diagram showing the game rules.
+
+![Rules](/screenshots/rules-modal.png)
+
+### Game Screen
+
+#### Title
+
+- The title is repeated on the game screen
+
+![Game Screen Title](/screenshots/game-screen-title.png)
+
+#### Game Start
+
+- Clear instructions on how to start the game
+
+![Start Game Instructions](/screenshots/game-instructions.png)
+
+#### Player Selection Icons
+
+- The player can click an icon to begin the game and for each turn.
+- Each icon shows the same hand signal you would use if playing in person.
+
+![Player Icons](/screenshots/selection-icons.png)
+
+#### Selected Icons
+
+- This area show what both the computer and player have selected
+
+![Selected Icon](/screenshots/choices.png)
+
+#### Result
+
+- There are three possible outcomes for each round, a win, a loss and a tie, the user will be shown a message corrisponding to the outcome.
+
+    - A Win 
+
+    ![result-win](/screenshots/result-win.png)
+
+    - A Loss
+
+    ![result-loss](/screenshots/result-lose.png)
+
+    - A Tie
+
+    ![resilt-tie](/screenshots/result-tie.png)
+
+#### Scores
+
+- The player and computer scores and number of tied rounds are displayed.
+
+![Scores](/screenshots/scores.png)
 
 
+### Game Over Screen
 
-- Welcome page
+- Once either the player or the computer reaches ten round wins the game is over. 
+- The user will be presented with the game over screen and a message to say whether they have won or lost the game.
+- There is a reset button that will allow the user to return to the game screen with all scores reset to start a new game.
 
-    - The welcome page provides information on Lauren Young, her background, exprience and qualifications. This also includes details of different types of training available.
-    - This will provide the user with vital information about Lauren and why they should use her services. It also educates the user on various training types that are on offer, the cost of sessions and cancellation policy.
+    - Game over win
 
+    ![game-over-win](/screenshots/game-over-win.png)
 
+    - Game over lose
 
-- Training page
+    ![game-over-lose](/screenshots/game-over-lose.png)
+  
+### Footer
 
-    - The training page provides information on the benefits of pysical training, including information on General Health, Weight Loss, Strength Training, Flexibility, Pre/Post Natal training and Mental health.
-    - This will provide education on the benefits of a healthy lifestyle and serve as motivation to get active. 
+- The footer contains links to Facebook, Twitter and Instagram and apears on all pages making it easy for users to link to social media. This is viewable on the landing page, the main game page and the game over screen.
 
+![footer](/screenshots/social-media.png)
 
-
-- Contact page
-
-    - The contact page provides a contact form with fields for name, email and message and lists email and mobile number for Lauren. There is also a picture of Lauren with motivational quote.
-    - This will provide the user with multiple options to contact Lauren and also show them what she looks like. 
-
-)
-
-- Footer
-
-    - The footer contains links to Facebook, Twitter and Instagram and apears on all pages making it easy for users to link to social media. It also includes Lauren's email and phone number on all pages.
-    - This will allow the user to visit the young PT social sites from every page and encourage them to connect. It will also allow users imediate access to Lauren's contact page without having to visit a specific page.
-
-
-
-### Future Features
+## Future Features
 
 - I would like to add some mutable sound effects for win and lose.
 - Add animation to game over image.
 - Add the ability to player vs a human player as well as the computer.
+- Add play online functionality
+
+# Technologies Used
+
+## Main Languages
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Libraries, Frameworks & Programs Used
+
+- [Google Fonts](https://fonts.google.com/)
+    - The font "Obritron" was imported from Google fonts. 
+
+- [Git](https://git-scm.com/)
+    - Git was used for version control by using the terminal within GitPod to commit to Git and then push to GitHub.
+
+- [GitHub](https://github.com/)
+    - GitHub was used to store the project after performing a push from GitPod.
+
+- [Font Awesome](https://fontawesome.com/)
+    - Font Awesome was used to import social media icons into the footer. 
+
+- [Am I Responsive](https://ui.dev/amiresponsive#/)
+    - Am I Responsive was used to create the mockup at the top of the README and to ensure responsive design throughout the project.
 
 # Testing
 
-Continual testing was performed during the development of this site by using DevTools, ensuring that not only did the layout look as intended but also behaved as intended. Once the site had been uploaded to GitHub repository more thorough testing was completed as outlined below.
-
-- The tests were carried out on iOS, MacOS, Windows and Android operating systems
-- Devices used in testing were Macbook Pro 16", iMac 27", iPad Pro, iPhone 8 & 12, Lenovo X1 Yoga and Samsung Galaxy S20
-- Browsers used in testing: Safari, Chrome (both on Windows and MacOS), Edge and Firefox
-
-## Basic tests carried out on all browsers and devices
-
-- Test pages load correctly across all operating systems and devices
-- Test pages are all responsive and clearly viewable on different screen sizes
-- Test pages load at an acceptable speed and no images are slow to load
-
-For a complete
-
-
-## Validator Testing
-
-- HTML
-
-    - All pages had their HTML tested with the official  and no errors were returned.
-
-- CSS
-
-    - Stylesheet.css was passed though the official  and no errors were returned.
-
-- JAVASCRIPT
-    - index.js was passed through JSHint and no errors were returned.
-
-## DevTools Lighthouse Testing
-
-- Site scores highly in all areas on Lighthouse
-
-
+Information on testing performed is locatated in a seperate testing file [Here](/TESTING.MD)
 
 ## Bugs 
 
@@ -140,7 +231,6 @@ This site has been deployed to GitHub Pages. The steps needed to deploy are list
 - Optionally, add a description of your fork.
 - Choose whether to copy only the default branch or all branches to the new fork. For many forking scenarios, such as contributing to open-source projects, you only need to copy the default branch. By default, only the default branch is copied.
 - Click Create fork.
-
 
 
 # Credits
