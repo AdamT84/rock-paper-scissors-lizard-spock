@@ -98,9 +98,23 @@ Continual testing was performed during the development of this site by using Dev
 
 ## Automated Testing
 
+### Code Validation
+
+The [W3C Markup Vaildator](https://validator.w3.org/) has been used to validate the HTML code in this project.
+
+- Result was a pass with no errors
+
+![HTML Validator](/screenshots/html-check.png)
+
+The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) has been used to validate the CSS code in this project.
+
+- Result was a pass with no errors
+
+![CSS Validator](/screenshots/css-check.png)
+
 ### Lighthouse
 
-Site scored maximum marks on Lighthouse testing
+- Site scored maximum marks on Lighthouse testing
 
 ![lighthouse testing](/screenshots/lighthouse.png)
 

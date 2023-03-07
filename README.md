@@ -1,37 +1,40 @@
 # Welcome to Rock, Paper, Scissors, Lizard, Spock - The ultimate game of chance.
 
+
+# Introduction
+
 Rock, Paper, Scissors, Lizard, Spock is a game invented by Sam Kass with Karen Bryla.  It is an expansion of the well known classic "Rock, Paper, Scissors. The game was recently given a boost in popularity thanks to being mentioned on "The Bing Bang Theory" a popular american sitcom. 
 
 The pupose of this site is to allow players to test their luck against the computer, or perhaps to help friends and family make decisions based on the random outcome of the game or just as a source of fun. The computer in this game makes a genuinely random selection, thus giving a fairer result than playing with another person as there are no patterns or preferred choices used by the computer. The users of this game will be able to find out the rules of the game with a simple diagram and will be able to track their score. The game is designed to be played on any device with Javascript enabled and by both adults and children. 
 
-## User Experience Design
+# User Experience Design
 
-### User stories
+## User stories
 
-#### First Time Player Goals
+### First Time Player Goals
 
 - As a first time player, I want to be able to easily understand the game purpose and find instructions about it.
 - As a first time player, I want to be able to take my time and not be rushed.
 - As a first time player, I want to know easily if I won or lost the round. 
 - As a first time player, I want to view the website and the content clearly on my mobile devices.
 
-#### Frequent Player Goals
+### Frequent Player Goals
 
 - As a frequent player I want to feel the game is random and I can both win and lose.
 - As a frequent player I want to ensure I can see my score and the computers score.
 - As a frequent player I want to start the game quickly without having to look at instructions or rules.
 
-## Design
+# Design
 
-### Colour Scheme
+## Colour Scheme
 
 The main colours used throughout the site are blue and green for back grounds with black text. The reason the developer chose these colours was to give the game a sci-fi link. Spock, who fans of Star Trek will know wore a blue shirt and green as this is colour everone thinks of with aliens. They have been merged by use of a liner-gradient in css to make an appealing background. The background offers excellent constrast with the black text and ensure the foreground is prominent. 
 
-### Typography
+## Typography
 
 The font chosen for the site is Orbitron and this has sci-fi feel and fits with the theme of the site extremly well. The fallback font is Sans Serif in case of import failure.
 
-### Media
+## Media
 
 The images used are catching and a good visual representation of the sites theme. 
 
@@ -183,13 +186,13 @@ The site is one page split into three areas:
 
 Information on testing performed is locatated in a seperate testing file [Here](/TESTING.MD)
 
-## Bugs 
+# Bugs 
 
-### Solved bugs
+## Solved bugs
 
 I experienced an issue after making a change to my functions, I removed the need for one called getScore which in turn would call two other functions one being updateScores. I didn't delete getScore or update an onclick that was calling this function. This meant I was getting an error stating I had an undelcared function in my code when checking the Javascript with JSHint. I then deleted the getScore function which then broke my scoring panel, meaning the player and computer scores stopped working. After some debugging I discovered this was due to the onclick function, which I updated to call the correct function and not getResult which solved the issue.
 
-### Unfixed bugs
+## Unfixed bugs
 
 There are no unfixed bugs
 
