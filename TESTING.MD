@@ -1,16 +1,16 @@
 # Welcome to Rock, Paper, Scissors, Lizard, Spock - Testing
 
-[Main README.md file](/TESTING.MD)
+[Main README.md file](/TESTING.MD)  
+
 [View GitHub repository](https://github.com/AdamT84/rock-paper-scissors-lizard-spock/)
 
-## Table of contents
+## Testing
+
+### Testing user stories. 
 
 
-# Testing
+#### First Time Player. 
 
-## Testing user stories
-
-### First Time Player
 
 1. As a new player, I want to be able to easily understand the game purpose and find instructions about it.
     - The start screen tells the user the name of the game and that it is a game of chance.
@@ -27,7 +27,7 @@
 4. As a new player, I want to view the website and content clearly on my mobile devices. 
     - The webiste has been designed with mobile devices in mind and fully tested to ensure all aspects of the site are responsive. 
 
-### Frequent Player Goals
+#### Frequent Player Goals
 
 1. As a frequent player I want to feel the game is random and I can both win and lose.
     - The game is truly random as the computer player is programmed to select a random choice each time. There are no patterns or preferences to pick a certain option.
@@ -40,7 +40,7 @@
     - The player can click play on the start screen and begin play immediately without being prompted to look at the rules.
 
 
-## Manual Testing
+### Manual Testing
 
 Continual testing was performed during the development of this site by using DevTools, ensuring that not only did the layout look as intended but also behaved as intended. Once the site had been uploaded to GitHub repository more thorough testing was completed as outlined below.
 
@@ -48,13 +48,13 @@ Continual testing was performed during the development of this site by using Dev
 - Devices used in testing were Macbook Pro 16", iMac 27", iPad Pro, iPhone 8 & 12, Lenovo X1 Yoga and Samsung Galaxy S20
 - Browsers used in testing: Safari, Chrome (both on Windows and MacOS), Edge and Firefox
 
-### Basic tests carried out on all browsers and devices
+#### Basic tests carried out on all browsers and devices
 
 - Test pages load correctly across all operating systems and devices
 - Test pages are all responsive and clearly viewable on different screen sizes
 - Test pages load at an acceptable speed and no images are slow to load
 
-### Start Screen
+#### Start Screen
 
 - Ensure that the start page is loaded first.
 - Ensure the spock image animation is working.
@@ -69,7 +69,7 @@ Continual testing was performed during the development of this site by using Dev
 
 ![play button](/screenshots/gifs/play-button.gif)
 
-### Game Screen
+#### Game Screen
 
 - Ensure that each icon works.
 - Ensure the correct selection appears in the player choice field.
@@ -79,7 +79,7 @@ Continual testing was performed during the development of this site by using Dev
 
 ![game play](/screenshots/gifs/game-play.gif)
 
-### Game Over Screen
+#### Game Over Screen
 
 - Ensure the game over screen appears when player wins.
 - Ensure the correct result text is displayed to tell player they won.
@@ -96,9 +96,9 @@ Continual testing was performed during the development of this site by using Dev
 ![Reset button](/screenshots/gifs/reset-button.gif)
 
 
-## Automated Testing
+### Automated Testing
 
-### Code Validation
+#### Code Validation
 
 The [W3C Markup Vaildator](https://validator.w3.org/) has been used to validate the HTML code in this project.
 
@@ -112,7 +112,13 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) has been used to v
 
 ![CSS Validator](/screenshots/css-check.png)
 
-### Lighthouse
+[JSHint](https://jshint.com/) has been used to validate the JavaScript code in this project.
+
+- Result was no errors or warnings found.
+
+![JSHint Check](/screenshots/jshint-check.png)
+
+#### Lighthouse
 
 - Site scored maximum marks on Lighthouse testing
 

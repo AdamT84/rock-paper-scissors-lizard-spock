@@ -26,14 +26,14 @@
         </div>
         <!-- Rules and start buttons-->
         <div id="welcome">
-            <button onclick="gameScreen()" id="start-btn">Play</button>
-            <button onclick="rules()" id="rule-btn">Rules</button>
+            <button id="start-btn">Play</button>
+            <button id="rule-btn">Rules</button>
         </div>
         <!--Modal for rules pop up - Advice on modal creation from w3schools.com-->
         <div id="rules-modal" class="modal">
             
         <div class="modal-content">
-            <button onclick="closeModal()">
+            <button id="close-btn">
                 <span class="close-modal">&times;</span>
             </button>
             <img src="assets/images/rules.png" id="rules-diagram" alt="game rules">
@@ -97,7 +97,7 @@
         </div>
         <div class="btn">
             <!-- Calls restartGame function when player clicks button -->
-            <button id="reset" onclick="restartGame()">Reset Game</button>
+            <button id="reset">Reset Game</button>
         </div>
     </div>
     <!-- Footer with social media links-->

@@ -9,6 +9,11 @@ const possibleChoices = document.querySelectorAll("img");
 const computerScore = document.getElementById("comp-score");
 const playerScore = document.getElementById("player-score");
 const tiedGame = document.getElementById("tied-game");
+const startBtn = document.getElementById("start-btn");
+const ruleBtn = document.getElementById("rule-btn");
+const closeBtn = document.getElementById("close-btn");
+const resetBtn = document.getElementById("reset");
+
 
 // Variables for player selection, computer section and result
 let playerChoice;
@@ -25,23 +30,27 @@ let won = "You win!";
 let lost = "You lose!";
 let tie = "It's a tie!";
 
+startBtn.addEventListener("click", startGame);
+
 // Function to show game screen and hide start screen
-function gameScreen() {
+function startGame() {
   document.getElementById("start-screen").style.display = "none";
   document.getElementById("game-screen").style.display = "block";
 }
 
 // Modal variables
 let modal = document.getElementById("rules-modal");
-let btn = document.getElementById("rule-btn");
-let span = document.getElementsByClassName("close-modal")[0];
 
 // Open modal on rules button click
+ruleBtn.addEventListener("click", rules);
+
 function rules() {
   modal.style.display = "block";
 }
 
 // Close model when X is clicked
+closeBtn.addEventListener("click", closeModal);
+
 function closeModal () {
   modal.style.display = "none";
 }
@@ -164,6 +173,8 @@ function gameOver(player) {
     endGameDisplay.innerHTML = "Bad luck!, you didn't win this time";
   }
 }
+
+resetBtn.addEventListener("click", restartGame);
 
 // Function to allow user to reset scores to 0 and restart game
 function restartGame() {
