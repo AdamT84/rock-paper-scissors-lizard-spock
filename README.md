@@ -156,10 +156,11 @@ The site is one page split into three areas:
 
 ### Future Features
 
+- Change the result message to show the game rule, Paper wraps Rock for instance, rather than win/lose/tie.
 - I would like to add some mutable sound effects for win and lose.
 - Add animation to game over image.
 - Add the ability to player vs a human player as well as the computer.
-- Add play online functionality
+- Add play online functionality.
 
 ## Technologies Used
 
