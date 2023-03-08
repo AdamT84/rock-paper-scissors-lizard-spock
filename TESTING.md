@@ -1,6 +1,6 @@
 # Welcome to Rock, Paper, Scissors, Lizard, Spock - Testing
 
-[Main README.md file](/TESTING.MD)  
+[Main README.md file](/README.md)  
 
 [View Live site](https://adamt84.github.io/rock-paper-scissors-lizard-spock/)
 
