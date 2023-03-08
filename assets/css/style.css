@@ -273,3 +273,17 @@ h1, h2 {
         text-align: center;
     }
 }
+
+/* 404 Page Styling */
+#error-body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #205072, #56C596);
+    font-family: Orbitron, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+#error-text {
+    font-size: larger;
+}
