@@ -7,9 +7,9 @@
 
 ## Introduction
 
-Rock, Paper, Scissors, Lizard, Spock is a game invented by Sam Kass with Karen Bryla.  It is an expansion of the well known classic "Rock, Paper, Scissors. The game was recently given a boost in popularity thanks to being mentioned on "The Bing Bang Theory" a popular american sitcom. 
+Rock, Paper, Scissors, Lizard, Spock is a game invented by Sam Kass with Karen Bryla.  It is an expansion of the well known classic "Rock, Paper, Scissors. The game was recently given a boost in popularity thanks to being mentioned on "The Bing Bang Theory" a popular American sitcom. 
 
-The pupose of this site is to allow players to test their luck against the computer, or perhaps to help friends and family make decisions based on the random outcome of the game or just as a source of fun. The computer in this game makes a genuinely random selection, thus giving a fairer result than playing with another person as there are no patterns or preferred choices used by the computer. The users of this game will be able to find out the rules of the game with a simple diagram and will be able to track their score. The game is designed to be played on any device with Javascript enabled and by both adults and children. 
+The purpose of this site is to allow players to test their luck against the computer, or perhaps to help friends and family make decisions based on the random outcome of the game or just as a source of fun. The computer in this game makes a genuinely random selection, thus giving a fairer result than playing with another person as there are no patterns or preferred choices used by the computer. The users of this game will be able to find out the rules of the game with a simple diagram and will be able to track their score. The game is designed to be played on any device with JavaScript enabled and by both adults and children. 
 
 ## User Experience Design
 
@@ -32,11 +32,11 @@ The pupose of this site is to allow players to test their luck against the compu
 
 ### Colour Scheme
 
-The main colours used throughout the site are blue and green for back grounds with black text. The reason the developer chose these colours was to give the game a sci-fi link. Spock, who fans of Star Trek will know wore a blue shirt and green as this is colour everone thinks of with aliens. They have been merged by use of a liner-gradient in css to make an appealing background. The background offers excellent constrast with the black text and ensure the foreground is prominent. 
+The main colours used throughout the site are blue and green for back grounds with black text. The reason the developer chose these colours was to give the game a sci-fi link. Spock, who fans of Star Trek will know wore a blue shirt and green as this is colour everyone thinks of with aliens. They have been merged by use of a liner-gradient in CSS to make an appealing background. The background offers excellent contrast with the black text and ensure the foreground is prominent. 
 
 ### Typography
 
-The font chosen for the site is Orbitron and this has sci-fi feel and fits with the theme of the site extremly well. The fallback font is Sans Serif in case of import failure.
+The font chosen for the site is Orbitron and this has sci-fi feel and fits with the theme of the site extremely well. The fallback font is Sans Serif in case of import failure.
 
 ### Media
 
@@ -54,12 +54,12 @@ The site is one page split into three areas:
     - Pressing the play button will take the user to the game screen.
 
 - A game screen
-    - Player selection buttons to start the game and make their choice of rock, paper, scissors, lizard or spock.
+    - Player selection buttons to start the game and make their choice of Rock, Paper, Scissors, Lizard or Spock.
     - Computer selected and Player selected fields. 
     - The result of who won or if it was tie.
     - The score for both computer and player and number of ties. 
 
--  a game over screen. 
+-  A game over screen. 
     - Notifies the user if they have won or lost the game.
     - Reset button to clear the scores and restart game.
 
@@ -74,13 +74,13 @@ The site is one page split into three areas:
 
 ##### Start Screen Image
 
-- Start screen has an animated cartoon image of spock with a fade in effect, making it look like he is being beamed onto the page.
+- Start screen has an animated cartoon image of Spock with a fade in effect, making it look like he is being beamed onto the page.
 - There are also two buttons, play and rules. Play will take user to the game screen and rules will display the rules diagram.
 
 ![Start Screen](/screenshots/start-screen.png)
 
 ##### Rules Modal
-- When a player clicks the rules button they are present with a clear diagram showing the game rules.
+- When a player clicks the rules button, they are present with a clear diagram showing the game rules.
 
 ![Rules](/screenshots/rules-modal.png)
 
@@ -113,7 +113,7 @@ The site is one page split into three areas:
 
 ##### Result
 
-- There are three possible outcomes for each round, a win, a loss and a tie, the user will be shown a message corrisponding to the outcome.
+- There are three possible outcomes for each round, a win, a loss and a tie, the user will be shown a message corresponding to the outcome.
 
     - A Win 
 
@@ -150,7 +150,7 @@ The site is one page split into three areas:
   
 #### Footer
 
-- The footer contains links to Facebook, Twitter and Instagram and apears on all pages making it easy for users to link to social media. This is viewable on the landing page, the main game page and the game over screen.
+- The footer contains links to Facebook, Twitter and Instagram and appears on all pages making it easy for users to link to social media. 
 
 ![footer](/screenshots/social-media.png)
 
@@ -184,17 +184,17 @@ The site is one page split into three areas:
     - Font Awesome was used to import social media icons into the footer. 
 
 - [Am I Responsive](https://ui.dev/amiresponsive#/)
-    - Am I Responsive was used to create the mockup at the top of the README and to ensure responsive design throughout the project.
+    - Am I Responsive was used to create the mock-up at the top of the README and to ensure responsive design throughout the project.
 
 ## Testing
 
-Information on testing performed is locatated in a seperate testing file [Here](/TESTING.MD)
+Information on testing performed is located in a separate testing file [Here](/TESTING.md)
 
 ## Bugs 
 
 ### Solved bugs
 
-I experienced an issue after making a change to my functions, I removed the need for one called getScore which in turn would call two other functions one being updateScores. I didn't delete getScore or update an onclick that was calling this function. This meant I was getting an error stating I had an undelcared function in my code when checking the Javascript with JSHint. I then deleted the getScore function which then broke my scoring panel, meaning the player and computer scores stopped working. After some debugging I discovered this was due to the onclick function, which I updated to call the correct function and not getResult which solved the issue.
+I experienced an issue after making a change to my functions, I removed the need for one called getScore which in turn would call two other functions one being updateScores. I didn't delete getScore or update an onclick that was calling this function. This meant I was getting an error stating I had an undeclared function in my code when checking the Javascript with JSHint. I then deleted the getScore function which then broke my scoring panel, meaning the player and computer scores stopped working. After some debugging, I discovered this was due to the onclick function, which I updated to call the correct function and not getResult which solved the issue.
 
 ### Unfixed bugs
 
@@ -210,16 +210,16 @@ This site has been deployed to GitHub Pages. The steps needed to deploy are list
 - Once on the settings page select pages from left hand menu
 - You will now see "Build and Deployment" options
 - Look for the "Branch" heading
-- Here you will see a drop down menu with the options none and main
+- Here you will see a drop-down menu with the options none and main
 - Select main and then hit save
 - Within a few minutes a ribbon will appear detailing that the site is live and the deployment was successful
 
 ### For anyone wishing to load the site and develop it further by cloning or forking the repository
 
-#### Clone the respository to create a local copy 
+#### Clone the repository to create a local copy 
 
 - On GitHub.com navigate to the main page of the repository.
-- Abouve the list of files you should see the code button click this and you will be given the below options
+- Above the list of files you should see the code button click this and you will be given the below options
 - Copy the URL for the repository
     - To clone the repository using HTTPS, under "HTTPS", click copy.
     - To clone the repository using an SSH key, click SSH, then click copy.
@@ -244,10 +244,12 @@ This site has been deployed to GitHub Pages. The steps needed to deploy are list
 
 ### Content
 
+I have listed below the main sites that have helped me complete this project. I spent time looking at tutorials and other games online on sites such as Stack Overflow and Slack and videos on YouTube for ideas and inspiration, but found the below resources extremely helpful. I would also like to thank my CI mentor Chris Quinn for his advice and motivation throughout this project. 
+
 - Advice on creating modals from [w3schools](https://w3schools.com/)
-- Advice on css animation from [w3schools](https://w3schools.com/)
+- Advice on CSS animation from [w3schools](https://w3schools.com/)
 - Code for fixed footer from [w3schools](https://w3schools.com/)
-- 3 different ways to code rock, paper scissors by Ania Kubow on youtube really helped me understand the code flow, different logic options and differnet ways to solve problems. [Ania Kubow Tutorial](https://youtu.be/RwFeg0cEZvQ/)
+- 3 different ways to code rock, paper scissors by Ania Kubow on youtube really helped me understand the code flow, different logic options and different ways to solve problems. [Ania Kubow Tutorial](https://youtu.be/RwFeg0cEZvQ/)
 - Font used is Orbitron from Google Fonts, both 700 and 400 weights have been used. 
 
 ### Media

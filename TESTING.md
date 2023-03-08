@@ -27,7 +27,7 @@
     - After the player or the computer gets 10 wins the game ends and the user is clearly informed if they have won or lost.
 
 4. As a new player, I want to view the website and content clearly on my mobile devices. 
-    - The webiste has been designed with mobile devices in mind and fully tested to ensure all aspects of the site are responsive. 
+    - The website has been designed with mobile devices in mind and fully tested to ensure all aspects of the site are responsive. 
 
 #### Frequent Player Goals
 
@@ -47,7 +47,7 @@
 Continual testing was performed during the development of this site by using DevTools, ensuring that not only did the layout look as intended but also behaved as intended. Once the site had been uploaded to GitHub repository more thorough testing was completed as outlined below.
 
 - The tests were carried out on iOS, MacOS, Windows and Android operating systems
-- Devices used in testing were Macbook Pro 16", iMac 27", iPad Pro, iPhone 8 & 12, Lenovo X1 Yoga and Samsung Galaxy S20
+- Devices used in testing were MacBook Pro 16", iMac 27", iPad Pro, iPhone 8 & 12, Lenovo X1 Yoga and Samsung Galaxy S20
 - Browsers used in testing: Safari, Chrome (both on Windows and MacOS), Edge and Firefox
 
 #### Basic tests carried out on all browsers and devices
@@ -59,7 +59,7 @@ Continual testing was performed during the development of this site by using Dev
 #### Start Screen
 
 - Ensure that the start page is loaded first.
-- Ensure the spock image animation is working.
+- Ensure the Spock image animation is working.
 
 ![Spock animation](/screenshots/gifs/spock-animation.gif)
 
@@ -123,7 +123,7 @@ Continual testing was performed during the development of this site by using Dev
 
 #### Footer
 
-- Ensure that Facbook opens in a new tab when icon is clicked.
+- Ensure that Facebook opens in a new tab when icon is clicked.
 
 ![Facebook](/screenshots/gifs/fb-button-gif.gif)
 
@@ -139,7 +139,7 @@ Continual testing was performed during the development of this site by using Dev
 
 #### Code Validation
 
-The [W3C Markup Vaildator](https://validator.w3.org/) has been used to validate the HTML code in this project.
+The [W3C Markup Validator](https://validator.w3.org/) has been used to validate the HTML code in this project.
 
 - Result was a pass with no errors
 
@@ -165,9 +165,9 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) has been used to v
 
 #### Wave
 
-[Wave Accessabilty Evaluation Tool](https://wave.webaim.org/) was used to check for any accessabilty issues. None were found.
+[Wave Accessibility Evaluation Tool](https://wave.webaim.org/) was used to check for any accessibility issues. None were found.
 
-![Wave Accessabilty Testing](/screenshots/wave-accessibility.png)
+![Wave Accessibility Testing](/screenshots/wave-accessibility.png)
 
 
 
