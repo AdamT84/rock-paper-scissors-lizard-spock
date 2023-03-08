@@ -243,7 +243,7 @@ This site has been deployed to GitHub Pages. The steps needed to deploy are list
 - Advice on creating modals from [w3schools](https://w3schools.com/)
 - Advice on css animation from [w3schools](https://w3schools.com/)
 - Code for fixed footer from [w3schools](https://w3schools.com/)
-- 3 different ways to code rock, paper scissors by Ania Kubow on youtube really helped me understand the code flow and differnet ways to solve problems. [Ania Kubow Tutorial](https://youtu.be/RwFeg0cEZvQ/)
+- 3 different ways to code rock, paper scissors by Ania Kubow on youtube really helped me understand the code flow, different logic options and differnet ways to solve problems. [Ania Kubow Tutorial](https://youtu.be/RwFeg0cEZvQ/)
 - Font used is Orbitron from Google Fonts, both 700 and 400 weights have been used. 
 
 ### Media

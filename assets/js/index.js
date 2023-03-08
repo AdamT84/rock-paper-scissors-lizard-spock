@@ -154,7 +154,7 @@ function updateScore() {
   computerScore.innerHTML = botScore;
   tiedGame.innerHTML = tieScore;
 
-  // Displays message once computer or player hits 10 points
+  // Once either player or computer hits ten, the gameover function is called.
   if (humanScore === 10) {
     gameOver("human");
   } else if (botScore === 10) {
