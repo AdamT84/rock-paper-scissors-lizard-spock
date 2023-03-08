@@ -2,6 +2,8 @@
 
 ![Site Mockup](/screenshots/site-mockup.png)
 
+[View the live site here](https://adamt84.github.io/rock-paper-scissors-lizard-spock/)
+
 
 ## Introduction
 
