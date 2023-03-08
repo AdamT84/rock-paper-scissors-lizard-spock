@@ -141,9 +141,14 @@ Continual testing was performed during the development of this site by using Dev
 
 The [W3C Markup Validator](https://validator.w3.org/) has been used to validate the HTML code in this project.
 
-- Result was a pass with no errors
+- Result was a pass with no errors for index.html
 
 ![HTML Validator](/screenshots/html-check.png)
+
+- Result was a pass with no errors for 404.html
+
+![404 HTML Validator](/screenshots/html-check-404.png)
+
 
 The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) has been used to validate the CSS code in this project.
 
