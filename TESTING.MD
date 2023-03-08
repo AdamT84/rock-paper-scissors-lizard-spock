@@ -2,6 +2,8 @@
 
 [Main README.md file](/TESTING.MD)  
 
+[View Live site](https://adamt84.github.io/rock-paper-scissors-lizard-spock/)
+
 [View GitHub repository](https://github.com/AdamT84/rock-paper-scissors-lizard-spock/)
 
 ## Testing
@@ -69,6 +71,18 @@ Continual testing was performed during the development of this site by using Dev
 
 ![play button](/screenshots/gifs/play-button.gif)
 
+- Ensure that the button hover style is working for play and rules.
+
+![button hover](/screenshots/gifs/start-screen-buttons.gif)
+
+- Ensure that the start screen is responsive to multiple screen sizes.
+
+![Start screen responsiveness](/screenshots/gifs/start-page-responsive.gif)
+
+- Ensure that rules modal is responsive.
+
+![Rules modal responsiveness](/screenshots/gifs/rules-responsive.gif)
+
 #### Game Screen
 
 - Ensure that each icon works.
@@ -78,6 +92,10 @@ Continual testing was performed during the development of this site by using Dev
 - Ensure the correct result is displayed.
 
 ![game play](/screenshots/gifs/game-play.gif)
+
+- Ensure that the game screen is responsive to multiple screen sizes.
+
+![Game screen responsiveness](/screenshots/gifs/game-screen-responsive.gif)
 
 #### Game Over Screen
 
@@ -95,6 +113,27 @@ Continual testing was performed during the development of this site by using Dev
 
 ![Reset button](/screenshots/gifs/reset-button.gif)
 
+- Ensure that the reset button hover style is working.
+
+![Reset button hover](/screenshots/gifs/game-reset-button.gif)
+
+- Ensure that the game over screen is responsive.
+
+![Game over responsiveness](/screenshots/gifs/game-over-responsive.gif)
+
+#### Footer
+
+- Ensure that Facbook opens in a new tab when icon is clicked.
+
+![Facebook](/screenshots/gifs/fb-button-gif.gif)
+
+- Ensure that Instagram opens in a new tab when icon is clicked.
+
+![Instagram](/screenshots/gifs/Insta-button.gif)
+
+- Ensure that Twitter opens in a new tab when icons is clicked.
+
+![Twitter](/screenshots/gifs/twitter-button-gif.gif)
 
 ### Automated Testing
 
@@ -123,6 +162,12 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) has been used to v
 - Site scored maximum marks on Lighthouse testing
 
 ![lighthouse testing](/screenshots/lighthouse.png)
+
+#### Wave
+
+[Wave Accessabilty Evaluation Tool](https://wave.webaim.org/) was used to check for any accessabilty issues. None were found.
+
+![Wave Accessabilty Testing](/screenshots/wave-accessibility.png)
 
 
 
