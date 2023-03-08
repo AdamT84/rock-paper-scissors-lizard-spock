@@ -1,5 +1,7 @@
 # Welcome to Rock, Paper, Scissors, Lizard, Spock - The ultimate game of chance.
 
+![Site Mockup](/screenshots/site-mockup.png)
+
 
 ## Introduction
 
